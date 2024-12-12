@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Bus Management System</h1>
+    <div class="container">
+        <!-- User Authentication -->
+        <div id="auth-section">
+            <h2>User Login/Register</h2>
+            <input type="text" id="email" placeholder="Email">
+            <input type="password" id="password" placeholder="Password">
+            <button id="login-btn">Login</button>
+            <button id="register-btn">Register</button>
+        </div>
+
+        <!-- Driver Authentication -->
+        <div id="driver-login-section" >
+            <h2>Driver Login</h2>
+            <input type="text" id="driver-email" placeholder="Driver Email">
+            <input type="password" id="driver-password" placeholder="Password">
+            <button id="driver-login-btn">Login</button>
+        </div>
+
+        <!-- User Bus Search Section -->
+        <div id="bus-section" >
+            <h2>Search Bus Location</h2>
+            <input type="text" id="source" placeholder="Source">
+            <input type="text" id="destination" placeholder="Destination">
+            <button id="search-bus-btn">Search</button>
+            <div id="bus-result"></div>
+        </div>
+
+        <!-- Driver Dashboard -->
+        <div id="driver-dashboard-section" >
+            <h2>Post Bus Information</h2>
+            <input type="text" id="post-bus-type" placeholder="Bus Type">
+            <input type="text" id="post-route" placeholder="Route">
+            <input type="text" id="post-contact" placeholder="Contact">
+            <button id="post-bus-info-btn">Post Information</button>
+            <div id="driver-info-result"></div>
+        </div>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
